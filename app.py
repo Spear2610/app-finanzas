@@ -10,8 +10,8 @@ st.set_page_config(page_title="PWM Personal Dashboard", layout="wide", initial_s
 
 # Inicialización de conexión a Supabase (Reemplaza con tus credenciales secretas)
 # En producción o Streamlit Cloud, usa st.secrets
-SUPABASE_URL = "TU_SUPABASE_URL"
-SUPABASE_KEY = "TU_SUPABASE_ANON_KEY"
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # --- CARGA DE DATOS ---
