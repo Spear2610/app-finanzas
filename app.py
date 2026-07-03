@@ -23,7 +23,7 @@ def load_data():
 df_tx, df_acc = load_data()
 
 # --- HEADER GENERAL (Estilo PWM Instrument) ---
-st.markdown("<h2 style='color:#00b37e; margin-bottom:0;'>PWM Personal Instrument</h2>", unsafe_scale=True)
+st.markdown("<h2 style='color:#00b37e; margin-bottom:0;'>PWM Personal Instrument</h2>", unsafe_allow_html=True)
 st.caption(f"Fictional-style Private Financial Ledger | Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 # --- CÁLCULO DE MÉTRICAS CLAVE ---
